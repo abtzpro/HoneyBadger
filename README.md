@@ -17,7 +17,7 @@ This is still an active project with much development and testing required
 
 4. If the connection is deemed safe, it gets added to a list of safe connections and the server responds with a message saying "Connection accepted". 
 
-5. If the connection is deemed unsafe, the script adds the details to a "honeypot". A honeypot is a system intended to mimic likely targets of cyberattacks to detect, deflect, or study attempts to gain unauthorized access. In this case, it's storing the information in a .txt file labeled "Malicious_Traffic.txt for later analysis. 
+5. If the connection is deemed unsafe, the script adds the details to a "honeypot". A honeypot is a system intended to mimic likely targets of cyberattacks to detect, deflect, or study attempts to gain unauthorized access. In this case, it's storing the information in a .txt file labeled "Malicious_Traffic.txt" for later analysis. 
 
 6. The server's response includes a mirror of public-facing data fetched from a specified URL. This data could be used for further analysis.
 
@@ -28,7 +28,7 @@ Please note that to run this script, you'll need to replace the placeholder valu
 ## Features to be added
 
 - Exception and error handling will be added soon 
-- functionality for safe traffic as shown and used for the malicious traffic minus the redirect to honeypot. in this way the program will create two seperate files one lavel Malicious_Files.txt and one labled Safe_Traffic.txt
+- functionality for safe traffic as shown and used for the malicious traffic minus the redirect to honeypot. in this way the program will create two seperate files one labeled Malicious_Files.txt and one labeled Safe_Traffic.txt
 - Function to block the nefarious traffic real time on the endpoint's firewall realtime if the threat_check function returns OTX listed IPs
 - a safer handling of the OTX API key for security purposes
 - More robust options to customize what is deemed unsafe traffic
